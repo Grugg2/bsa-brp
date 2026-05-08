@@ -116,7 +116,7 @@ const Brp = class {
     }
 
     get configLootItemType() {
-        return "equipment";
+        return "gear";
     }
 
     get itemPriceAttribute() {
