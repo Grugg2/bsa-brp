@@ -1,0 +1,14 @@
+{
+  "name": "bsa-brp",
+  "version": "1.0.0",
+  "description": "Beaver's System Adaptation for BRP",
+  "main": "src/main.js",
+  "scripts": {
+    "build": "tsc && echo 'Build complete'"
+  },
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "dependencies": {}
+}
