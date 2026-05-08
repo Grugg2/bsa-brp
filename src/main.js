@@ -128,10 +128,19 @@ const Brp = class {
     }
 
     itemSheetReplaceContent(app, html, element) {
-        const sheetBody = $(html).find('.sheet-body, .window-content');
-        if (sheetBody.length) {
-            sheetBody.empty();
-            sheetBody.append(element);
+        // Better support for BRP V2 sheets (tabs + PARTS system)
+        const activeTab = $(html).find('.tab.active, .tab[data-tab].active');
+        if (activeTab.length) {
+            activeTab.empty().append(element);
+        } else {
+            // Fallback for older sheets
+            const sheetBody = $(html).find('.sheet-body, .window-content, .tab');
+            if (sheetBody.length) {
+                sheetBody.empty();
+                sheetBody.append(element);
+            } else {
+                $(html).append(element);
+            }
         }
     }
 };

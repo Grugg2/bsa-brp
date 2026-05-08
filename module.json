@@ -2,7 +2,7 @@
   "id": "bsa-brp",
   "title": "Beaver's System Adaptation for BRP",
   "description": "This module provides system specific implementation so that other modules can be written system independent when implementing against beavers-system-interface. Supports Basic Role Playing (BRP) system for Foundry VTT.",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "compatibility": {
     "minimum": "11",
     "verified": "13"
