@@ -136,7 +136,7 @@ export class Brp {
     }
 
     get configLootItemType() {
-        return "equipment";
+        return "gear";
     }
 
     get itemPriceAttribute() {
